@@ -1,0 +1,128 @@
+*{
+  transition: .3s all;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calendar {
+  margin: 20px auto;
+  display: inline-block;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#calendar-header button {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+th, td:not(.current-day):hover{
+  background-color: rgba(128, 128, 128, 0.148);
+}
+
+.current-day {
+  background-color: red;
+  color: white;
+}
+
+.current-days{
+  background-color: brown;
+  color: white;
+}
+
+#prev-month,#next-month{
+  background-color: rgb(0, 106, 255);
+  color: white;
+  padding: 6px 10px;
+}
+
+#prev-month:hover,#next-month:hover{
+  background-color: rgb(3, 67, 157);
+}
+
+.clock{
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.clock__image{
+  width: 100%;
+}
+
+.clock__second{
+  width: 120px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  top: 198px;
+  left: 200px;
+  transform-origin: left center;
+}
+
+.clock__minute{
+  width: 90px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  top: 198px;
+  left: 200px;
+  transform-origin: left center;
+}
+
+.clock__hour{
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  top: 198px;
+  left: 200px;
+  transform-origin: left center;
+}
+
+.clock__time{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 400px;
+}
+
+.clock__text{
+  font-size: 30px;
+}
+
+.click__button{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.click__button:hover{
+  background-color: rgb(151, 6, 6);
+}

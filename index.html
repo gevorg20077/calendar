@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="clock">
+    <img class="clock__image"
+      src="https://png.pngtree.com/png-clipart/20211009/original/pngtree-clock-no-hand-circle-strip-png-image_6849293.png"
+      alt="">
+    <div class="clock__second"></div>
+    <div class="clock__minute"></div>
+    <div class="clock__hour"></div>
+  </div>
+  <div class="clock__time">
+    <p class="clock__text"></p>
+    <button class="click__button" onclick="changeTime()">Change Time</button>
+  </div>
+  <div id="calendar">
+    <div id="calendar-header">
+      <button id="prev-month">Previous</button>
+      <span id="month-year"></span>
+      <button id="next-month">Next</button>
+    </div>
+    <table id="calendar-table">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
